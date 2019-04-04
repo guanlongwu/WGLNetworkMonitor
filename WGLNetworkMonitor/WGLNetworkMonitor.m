@@ -8,6 +8,8 @@
 
 #import "WGLNetworkMonitor.h"
 #import "WGLNetworkReachabilityManager.h"
+#import "WGLNetworkInfoHelper.h"
+#import "WGLNetworkTrafficManager.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
@@ -114,15 +116,15 @@
 
 - (BOOL)is2G {
     WGLNetworkAccessTech value = self.networkAccessTech;
-    return value == WGLNetworkAccessTechEdge || value == WGLNetworkAccessTechGPRS;
+    return (value == WGLNetworkAccessTechEdge
+            || value == WGLNetworkAccessTechGPRS);
 }
 
 - (BOOL)is3G {
     WGLNetworkAccessTech value = self.networkAccessTech;
     return (value != WGLNetworkAccessTechUnknown)
-    && (value != WGLNetworkAccessTechLTE)
-    && (value != WGLNetworkAccessTechGPRS)
-    && (value != WGLNetworkAccessTechEdge);
+    && (NO != self.is2G)
+    && (NO != self.is4G);
 }
 
 - (BOOL)is4G {
@@ -178,6 +180,64 @@
     else{
         return WGLNetworkAccessTechUnknown;
     }
+}
+
+
+#pragma mark - 设备网络信息
+
+- (NSString *)ipAddressWIFI {
+    return [WGLNetworkInfoHelper ipAddressWIFI];
+}
+
+- (NSString *)ipAddressCell {
+    return [WGLNetworkInfoHelper ipAddressCell];
+}
+
+- (NSString *)ipv4Address {
+    return [WGLNetworkInfoHelper ipv4Address];
+}
+
+- (NSString *)ipv6Address {
+    return [WGLNetworkInfoHelper ipv6Address];
+}
+
+
+#pragma mark - 网速
+
+- (void)startTraffic {
+    [[WGLNetworkTrafficManager sharedManager] startMonitoring];
+}
+
+- (void)stopTraffic {
+    [[WGLNetworkTrafficManager sharedManager] stopMonitoring];
+}
+
+- (uint64_t)wwanNetworkSpeed {
+    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
+        [self startTraffic];
+    }
+    return [WGLNetworkTrafficManager sharedManager].wwanNetworkSpeed;   //单位kb/s
+}
+
+- (uint64_t)wifiNetworkSpeed {
+    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
+        [self startTraffic];
+    }
+    return [WGLNetworkTrafficManager sharedManager].wifiNetworkSpeed;   //单位kb/s
+}
+
+- (uint64_t)awdlNetworkSpeed {
+    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
+        [self startTraffic];
+    }
+    return [WGLNetworkTrafficManager sharedManager].awdlNetworkSpeed;   //单位kb/s
+}
+
+- (uint64_t)allNetworkSpeed {
+    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
+        [self startTraffic];
+    }
+    return [WGLNetworkTrafficManager sharedManager].allNetworkSpeed;    //单位kb/s
 }
 
 @end

@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		094100F022408DF90071B0E8 /* WGLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 094100EF22408DF90071B0E8 /* WGLNetworkMonitor.m */; };
 		094100F122408DF90071B0E8 /* WGLNetworkMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 094100EE22408DF90071B0E8 /* WGLNetworkMonitor.h */; };
-		094100FB22408E470071B0E8 /* WGLNetworkCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 094100F822408E470071B0E8 /* WGLNetworkCommon.m */; };
-		094100FC22408E470071B0E8 /* WGLNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 094100FA22408E470071B0E8 /* WGLNetworkReachabilityManager.m */; };
+		0956F5452255EDF900CA026F /* WGLNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5412255EDF900CA026F /* WGLNetworkReachabilityManager.m */; };
+		0956F5462255EDF900CA026F /* WGLNetworkCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5422255EDF900CA026F /* WGLNetworkCommon.m */; };
+		0956F5472255EDF900CA026F /* WGLNetworkInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5432255EDF900CA026F /* WGLNetworkInfoHelper.m */; };
+		0956F54D2256024000CA026F /* WGLNetworkTrafficManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F54C2256024000CA026F /* WGLNetworkTrafficManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,10 +32,14 @@
 		094100EB22408DF90071B0E8 /* libWGLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWGLNetworkMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		094100EE22408DF90071B0E8 /* WGLNetworkMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLNetworkMonitor.h; sourceTree = "<group>"; };
 		094100EF22408DF90071B0E8 /* WGLNetworkMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkMonitor.m; sourceTree = "<group>"; };
-		094100F722408E470071B0E8 /* WGLNetworkCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkCommon.h; sourceTree = "<group>"; };
-		094100F822408E470071B0E8 /* WGLNetworkCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkCommon.m; sourceTree = "<group>"; };
-		094100F922408E470071B0E8 /* WGLNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		094100FA22408E470071B0E8 /* WGLNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0956F53F2255EDF900CA026F /* WGLNetworkCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkCommon.h; sourceTree = "<group>"; };
+		0956F5402255EDF900CA026F /* WGLNetworkInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkInfoHelper.h; sourceTree = "<group>"; };
+		0956F5412255EDF900CA026F /* WGLNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0956F5422255EDF900CA026F /* WGLNetworkCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkCommon.m; sourceTree = "<group>"; };
+		0956F5432255EDF900CA026F /* WGLNetworkInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkInfoHelper.m; sourceTree = "<group>"; };
+		0956F5442255EDF900CA026F /* WGLNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0956F54B2256024000CA026F /* WGLNetworkTrafficManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLNetworkTrafficManager.h; sourceTree = "<group>"; };
+		0956F54C2256024000CA026F /* WGLNetworkTrafficManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkTrafficManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +74,24 @@
 			children = (
 				094100EE22408DF90071B0E8 /* WGLNetworkMonitor.h */,
 				094100EF22408DF90071B0E8 /* WGLNetworkMonitor.m */,
-				094100F722408E470071B0E8 /* WGLNetworkCommon.h */,
-				094100F822408E470071B0E8 /* WGLNetworkCommon.m */,
-				094100F922408E470071B0E8 /* WGLNetworkReachabilityManager.h */,
-				094100FA22408E470071B0E8 /* WGLNetworkReachabilityManager.m */,
+				0956F53E2255EDF900CA026F /* Core */,
 			);
 			path = WGLNetworkMonitor;
+			sourceTree = "<group>";
+		};
+		0956F53E2255EDF900CA026F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0956F53F2255EDF900CA026F /* WGLNetworkCommon.h */,
+				0956F5422255EDF900CA026F /* WGLNetworkCommon.m */,
+				0956F5442255EDF900CA026F /* WGLNetworkReachabilityManager.h */,
+				0956F5412255EDF900CA026F /* WGLNetworkReachabilityManager.m */,
+				0956F5402255EDF900CA026F /* WGLNetworkInfoHelper.h */,
+				0956F5432255EDF900CA026F /* WGLNetworkInfoHelper.m */,
+				0956F54B2256024000CA026F /* WGLNetworkTrafficManager.h */,
+				0956F54C2256024000CA026F /* WGLNetworkTrafficManager.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				094100FB22408E470071B0E8 /* WGLNetworkCommon.m in Sources */,
-				094100FC22408E470071B0E8 /* WGLNetworkReachabilityManager.m in Sources */,
+				0956F5462255EDF900CA026F /* WGLNetworkCommon.m in Sources */,
+				0956F5472255EDF900CA026F /* WGLNetworkInfoHelper.m in Sources */,
+				0956F54D2256024000CA026F /* WGLNetworkTrafficManager.m in Sources */,
+				0956F5452255EDF900CA026F /* WGLNetworkReachabilityManager.m in Sources */,
 				094100F022408DF90071B0E8 /* WGLNetworkMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

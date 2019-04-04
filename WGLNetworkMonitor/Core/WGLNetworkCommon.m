@@ -8,7 +8,7 @@
 
 #import "WGLNetworkCommon.h"
 
-NSString * const WGLNetworkingReachabilityDidChangeNotification = @"com.alamofire.networking.reachability.change";
+NSString * const WGLNetworkingReachabilityDidChangeNotification = @"com.wgl.networking.reachability.change";
 NSString * const WGLNetworkingReachabilityNotificationStatusItem = @"WGLNetworkingReachabilityNotificationStatusItem";
 
 
