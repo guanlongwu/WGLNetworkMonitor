@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WGLNetworkCommon.h"
-//#import "WGLTrafficMonitor.h"
+#import "WGLTrafficMonitor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -85,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param types traffic types
  @return speed for traffic.
  */
-//- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types;
+- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types;
 
 /**
  获取设备的网络流量字节数bytes.
@@ -93,7 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param types traffic types
  @return bytes counter.
  */
-//- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types;
+- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types;
 
 
 /********************* UIDevice Network Information *********************/
