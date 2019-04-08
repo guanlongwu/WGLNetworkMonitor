@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WGLNetworkMonitor"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "This is a mobile network status monitor."
 
   # This description is used to generate tags and improve search results.
@@ -91,11 +91,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = 'WGLNetworkMonitor/*'
+  spec.source_files = 'WGLNetworkMonitor/**/*'
   #spec.exclude_files = "Classes/Exclude"
   #spec.vendored_library = 'libs/WGLNetworkMonitor.a'
 
-  spec.public_header_files = "WGLNetworkMonitor/*.h"
+  spec.public_header_files = "WGLNetworkMonitor/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
