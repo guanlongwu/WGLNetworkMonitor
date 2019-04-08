@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WGLNetworkMonitor"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "This is a mobile network status monitor."
 
   # This description is used to generate tags and improve search results.
@@ -137,5 +137,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+   spec.dependency "WGLTrafficMonitor", "~> 0.0.2"
 
 end
