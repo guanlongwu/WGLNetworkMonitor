@@ -9,7 +9,7 @@
 #import "WGLNetworkMonitor.h"
 #import "WGLNetworkReachabilityManager.h"
 #import "WGLNetworkInfoHelper.h"
-#import "WGLNetworkTrafficManager.h"
+#import "WGLTrafficMonitor.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
@@ -205,39 +205,24 @@
 #pragma mark - 网速
 
 - (void)startTraffic {
-    [[WGLNetworkTrafficManager sharedManager] startMonitoring];
+    [[WGLTrafficMonitor sharedMonitor] startMonitoring];
 }
 
 - (void)stopTraffic {
-    [[WGLNetworkTrafficManager sharedManager] stopMonitoring];
+    [[WGLTrafficMonitor sharedMonitor] stopMonitoring];
 }
 
-- (uint64_t)wwanNetworkSpeed {
-    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
+- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types {
+    if (NO == [WGLTrafficMonitor sharedMonitor].isMonitoring) {
         [self startTraffic];
     }
-    return [WGLNetworkTrafficManager sharedManager].wwanNetworkSpeed;   //单位kb/s
+    uint64_t speed = [[WGLTrafficMonitor sharedMonitor] getNetworkTrafficSpeed:types];
+    return speed;
 }
 
-- (uint64_t)wifiNetworkSpeed {
-    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
-        [self startTraffic];
-    }
-    return [WGLNetworkTrafficManager sharedManager].wifiNetworkSpeed;   //单位kb/s
+- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types {
+    return [[WGLTrafficMonitor sharedMonitor] getNetworkTrafficBytes:types];
 }
 
-- (uint64_t)awdlNetworkSpeed {
-    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
-        [self startTraffic];
-    }
-    return [WGLNetworkTrafficManager sharedManager].awdlNetworkSpeed;   //单位kb/s
-}
-
-- (uint64_t)allNetworkSpeed {
-    if (NO == [WGLNetworkTrafficManager sharedManager].isMonitoring) {
-        [self startTraffic];
-    }
-    return [WGLNetworkTrafficManager sharedManager].allNetworkSpeed;    //单位kb/s
-}
 
 @end

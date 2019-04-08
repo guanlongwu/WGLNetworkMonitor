@@ -1,0 +1,16 @@
+PODS:
+  - WGLTrafficMonitor (0.0.2)
+
+DEPENDENCIES:
+  - WGLTrafficMonitor (~> 0.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WGLTrafficMonitor
+
+SPEC CHECKSUMS:
+  WGLTrafficMonitor: 943f02eb5de6df368d57c73b76749b63752bdf42
+
+PODFILE CHECKSUM: 06b8d66729e0b3673dec5914213ecc81aa4159c1
+
+COCOAPODS: 1.6.1

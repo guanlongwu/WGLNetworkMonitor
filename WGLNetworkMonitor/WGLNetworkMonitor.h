@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WGLNetworkCommon.h"
+#import "WGLTrafficMonitor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,6 +67,35 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)stopMonitoring;
 
+
+/********************* Network Traffic *********************/
+
+/**
+ 开始计算流量
+ */
+- (void)startTraffic;
+
+/**
+ 结束计算流量
+ */
+- (void)stopTraffic;
+
+/**
+ 网速 (单位：KB/s)
+ @param types traffic types
+ @return speed for traffic.
+ */
+- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types;
+
+/**
+ 获取设备的网络流量字节数bytes.
+ @discussion 获取的是设备上一次开机开始的总网络流量字节数bytes.
+ @param types traffic types
+ @return bytes counter.
+ */
+- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types;
+
+
 /********************* UIDevice Network Information *********************/
 
 /**
@@ -87,39 +117,6 @@ NS_ASSUME_NONNULL_BEGIN
  获取该设备的ipv6地址(can be nil) e.g. @"fe80::7418:f0cb:f231:71c6"
  */
 @property (nullable, nonatomic, readonly) NSString *ipv6Address;
-
-
-/********************* Network Traffic *********************/
-
-/**
- 开始计算流量
- */
-- (void)startTraffic;
-
-/**
- 结束计算流量
- */
-- (void)stopTraffic;
-
-/**
- WWAN上下行网速 (单位：KB/s)
- */
-@property (nonatomic, assign, readonly) uint64_t wwanNetworkSpeed;
-
-/**
- WIFI上下行网速 (单位：KB/s)
- */
-@property (nonatomic, assign, readonly) uint64_t wifiNetworkSpeed;
-
-/**
- AWDL上下行网速 (单位：KB/s)
- */
-@property (nonatomic, assign, readonly) uint64_t awdlNetworkSpeed;
-
-/**
- 上下行网速（WWAN + WIFI + AWDL） (单位：KB/s)
- */
-@property (nonatomic, assign, readonly) uint64_t allNetworkSpeed;
 
 
 @end

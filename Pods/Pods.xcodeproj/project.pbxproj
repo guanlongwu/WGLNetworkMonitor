@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A74026376484A10A42C3B82919351A3 /* WGLTrafficCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1E98D8848B1B7834A619DF0A1BEB63 /* WGLTrafficCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D913F3B8270BF703CFF68267BDCF3BA /* WGLTrafficMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D729E02104C93F198790B2AE2DFDCD3 /* WGLTrafficMonitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48B03936E86AADB94AE657FF9094F659 /* Pods-WGLNetworkMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8102EDAF874948488AF982CC5113CCA /* Pods-WGLNetworkMonitor-dummy.m */; };
+		B305F809BCC06D2DC0BEB879D4120821 /* WGLTrafficMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A3C3C6413E8B8DB3609D897D620D85 /* WGLTrafficMonitor-dummy.m */; };
+		D43356E1D3A89E16FFE3E378FE4BE02E /* WGLTrafficCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FB325E4F4A0E0671811575B9C443B0 /* WGLTrafficCommon.m */; };
+		E74BB00B90A7E2B4BB7251D02A411950 /* WGLTrafficMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C88AD4CF778370E2B1628C141C5AEC /* WGLTrafficMonitor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B37DECFDAF1A8463D42DB8A07717C6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9455E34A0BA7936EDE105D2D2DB8D7FC;
+			remoteInfo = WGLTrafficMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33315952AEC30E3E02D16AAAE2D8CBAE /* Pods-WGLNetworkMonitor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WGLNetworkMonitor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B1E98D8848B1B7834A619DF0A1BEB63 /* WGLTrafficCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WGLTrafficCommon.h; path = WGLTrafficMonitor/WGLTrafficCommon.h; sourceTree = "<group>"; };
+		587FF6B2F84C3ADBDD4F30726590E286 /* WGLTrafficMonitor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WGLTrafficMonitor-prefix.pch"; sourceTree = "<group>"; };
+		5D729E02104C93F198790B2AE2DFDCD3 /* WGLTrafficMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WGLTrafficMonitor.h; path = WGLTrafficMonitor/WGLTrafficMonitor.h; sourceTree = "<group>"; };
+		62A3C3C6413E8B8DB3609D897D620D85 /* WGLTrafficMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WGLTrafficMonitor-dummy.m"; sourceTree = "<group>"; };
+		6A70447902F9C1A6D80A2FF932652862 /* libPods-WGLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WGLNetworkMonitor.a"; path = "libPods-WGLNetworkMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73421CE762F1BAF036979F5BDD14B25C /* Pods-WGLNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGLNetworkMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		76095EC12EF1C037A5186E18A3BDA3CD /* libWGLTrafficMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWGLTrafficMonitor.a; path = libWGLTrafficMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FB325E4F4A0E0671811575B9C443B0 /* WGLTrafficCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WGLTrafficCommon.m; path = WGLTrafficMonitor/WGLTrafficCommon.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5508DF118DFB521240ABC812BB7C6EB /* Pods-WGLNetworkMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGLNetworkMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		A8CB59BE8B5E98764BF67A0CEE51F6BD /* Pods-WGLNetworkMonitor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WGLNetworkMonitor-acknowledgements.plist"; sourceTree = "<group>"; };
+		B6582B47E06607800118E989A39335D0 /* WGLTrafficMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WGLTrafficMonitor.xcconfig; sourceTree = "<group>"; };
+		B9C88AD4CF778370E2B1628C141C5AEC /* WGLTrafficMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WGLTrafficMonitor.m; path = WGLTrafficMonitor/WGLTrafficMonitor.m; sourceTree = "<group>"; };
+		F8102EDAF874948488AF982CC5113CCA /* Pods-WGLNetworkMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WGLNetworkMonitor-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027AB906E2268FD3C2896F4012AC0D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406E33F0EE40B89B991DA66C856B2C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095AF9949C0A6CB4B4DAF5B95A097A15 /* Pods-WGLNetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				33315952AEC30E3E02D16AAAE2D8CBAE /* Pods-WGLNetworkMonitor-acknowledgements.markdown */,
+				A8CB59BE8B5E98764BF67A0CEE51F6BD /* Pods-WGLNetworkMonitor-acknowledgements.plist */,
+				F8102EDAF874948488AF982CC5113CCA /* Pods-WGLNetworkMonitor-dummy.m */,
+				A5508DF118DFB521240ABC812BB7C6EB /* Pods-WGLNetworkMonitor.debug.xcconfig */,
+				73421CE762F1BAF036979F5BDD14B25C /* Pods-WGLNetworkMonitor.release.xcconfig */,
+			);
+			name = "Pods-WGLNetworkMonitor";
+			path = "Target Support Files/Pods-WGLNetworkMonitor";
+			sourceTree = "<group>";
+		};
+		3E592BD342798CC02DEA7EB5CA3160B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A70447902F9C1A6D80A2FF932652862 /* libPods-WGLNetworkMonitor.a */,
+				76095EC12EF1C037A5186E18A3BDA3CD /* libWGLTrafficMonitor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BBD59CB77CAB3C56F2917FD719717BC /* WGLTrafficMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E98D8848B1B7834A619DF0A1BEB63 /* WGLTrafficCommon.h */,
+				92FB325E4F4A0E0671811575B9C443B0 /* WGLTrafficCommon.m */,
+				5D729E02104C93F198790B2AE2DFDCD3 /* WGLTrafficMonitor.h */,
+				B9C88AD4CF778370E2B1628C141C5AEC /* WGLTrafficMonitor.m */,
+				82ADE7F8554D5EB54800BCCC561284E3 /* Support Files */,
+			);
+			name = WGLTrafficMonitor;
+			path = WGLTrafficMonitor;
+			sourceTree = "<group>";
+		};
+		82ADE7F8554D5EB54800BCCC561284E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6582B47E06607800118E989A39335D0 /* WGLTrafficMonitor.xcconfig */,
+				62A3C3C6413E8B8DB3609D897D620D85 /* WGLTrafficMonitor-dummy.m */,
+				587FF6B2F84C3ADBDD4F30726590E286 /* WGLTrafficMonitor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WGLTrafficMonitor";
+			sourceTree = "<group>";
+		};
+		9B8E6A0357980CEAC5D05CEF6A67D2E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				095AF9949C0A6CB4B4DAF5B95A097A15 /* Pods-WGLNetworkMonitor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CAB85627221B119DF10D180D4AC89B09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BBD59CB77CAB3C56F2917FD719717BC /* WGLTrafficMonitor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				CAB85627221B119DF10D180D4AC89B09 /* Pods */,
+				3E592BD342798CC02DEA7EB5CA3160B5 /* Products */,
+				9B8E6A0357980CEAC5D05CEF6A67D2E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6FE85A271A0BBEAF19AB9FB7FCF78CAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A74026376484A10A42C3B82919351A3 /* WGLTrafficCommon.h in Headers */,
+				3D913F3B8270BF703CFF68267BDCF3BA /* WGLTrafficMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100FBCA0FD3E61E225FEC6BF33A164E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9455E34A0BA7936EDE105D2D2DB8D7FC /* WGLTrafficMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9B71BA6E77183F1FCF5CA59150250E /* Build configuration list for PBXNativeTarget "WGLTrafficMonitor" */;
+			buildPhases = (
+				6FE85A271A0BBEAF19AB9FB7FCF78CAD /* Headers */,
+				EAC988C08590FEE26AC9B4B20A583BFC /* Sources */,
+				027AB906E2268FD3C2896F4012AC0D19 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGLTrafficMonitor;
+			productName = WGLTrafficMonitor;
+			productReference = 76095EC12EF1C037A5186E18A3BDA3CD /* libWGLTrafficMonitor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8F0C7B62536CC3A1A183080883B1623 /* Pods-WGLNetworkMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F116693AE87EDA01B02012835D1BEB86 /* Build configuration list for PBXNativeTarget "Pods-WGLNetworkMonitor" */;
+			buildPhases = (
+				E100FBCA0FD3E61E225FEC6BF33A164E /* Headers */,
+				B1B32EF115C1764F156142C8480761CA /* Sources */,
+				406E33F0EE40B89B991DA66C856B2C25 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D3C362B4D1AF2F12AAC4F3A27CB539D /* PBXTargetDependency */,
+			);
+			name = "Pods-WGLNetworkMonitor";
+			productName = "Pods-WGLNetworkMonitor";
+			productReference = 6A70447902F9C1A6D80A2FF932652862 /* libPods-WGLNetworkMonitor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3E592BD342798CC02DEA7EB5CA3160B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8F0C7B62536CC3A1A183080883B1623 /* Pods-WGLNetworkMonitor */,
+				9455E34A0BA7936EDE105D2D2DB8D7FC /* WGLTrafficMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1B32EF115C1764F156142C8480761CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B03936E86AADB94AE657FF9094F659 /* Pods-WGLNetworkMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC988C08590FEE26AC9B4B20A583BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43356E1D3A89E16FFE3E378FE4BE02E /* WGLTrafficCommon.m in Sources */,
+				B305F809BCC06D2DC0BEB879D4120821 /* WGLTrafficMonitor-dummy.m in Sources */,
+				E74BB00B90A7E2B4BB7251D02A411950 /* WGLTrafficMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D3C362B4D1AF2F12AAC4F3A27CB539D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WGLTrafficMonitor;
+			target = 9455E34A0BA7936EDE105D2D2DB8D7FC /* WGLTrafficMonitor */;
+			targetProxy = 9B37DECFDAF1A8463D42DB8A07717C6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		09DBCAF99717388EC83800AED5CC45A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6582B47E06607800118E989A39335D0 /* WGLTrafficMonitor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WGLTrafficMonitor/WGLTrafficMonitor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WGLTrafficMonitor;
+				PRODUCT_NAME = WGLTrafficMonitor;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		644FA4F4D220D00EA5E1DD1017B48E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5508DF118DFB521240ABC812BB7C6EB /* Pods-WGLNetworkMonitor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70E6FF5972CC54456B554F4064FF93D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73421CE762F1BAF036979F5BDD14B25C /* Pods-WGLNetworkMonitor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AED8FC7542C1C01ED9C3B431EF936A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6582B47E06607800118E989A39335D0 /* WGLTrafficMonitor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WGLTrafficMonitor/WGLTrafficMonitor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WGLTrafficMonitor;
+				PRODUCT_NAME = WGLTrafficMonitor;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9B71BA6E77183F1FCF5CA59150250E /* Build configuration list for PBXNativeTarget "WGLTrafficMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED8FC7542C1C01ED9C3B431EF936A2B /* Debug */,
+				09DBCAF99717388EC83800AED5CC45A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F116693AE87EDA01B02012835D1BEB86 /* Build configuration list for PBXNativeTarget "Pods-WGLNetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644FA4F4D220D00EA5E1DD1017B48E62 /* Debug */,
+				70E6FF5972CC54456B554F4064FF93D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
