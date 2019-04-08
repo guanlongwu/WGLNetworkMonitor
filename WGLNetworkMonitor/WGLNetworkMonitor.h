@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "WGLNetworkCommon.h"
-#import "WGLTrafficMonitor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,34 +65,6 @@ NS_ASSUME_NONNULL_BEGIN
  结束监视网络可达性状态的变化。
  */
 - (void)stopMonitoring;
-
-
-/********************* Network Traffic *********************/
-
-/**
- 开始计算流量
- */
-- (void)startTraffic;
-
-/**
- 结束计算流量
- */
-- (void)stopTraffic;
-
-/**
- 网速 (单位：KB/s)
- @param types traffic types
- @return speed for traffic.
- */
-- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types;
-
-/**
- 获取设备的网络流量字节数bytes.
- @discussion 获取的是设备上一次开机开始的总网络流量字节数bytes.
- @param types traffic types
- @return bytes counter.
- */
-- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types;
 
 
 /********************* UIDevice Network Information *********************/

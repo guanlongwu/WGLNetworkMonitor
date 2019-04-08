@@ -9,7 +9,6 @@
 #import "WGLNetworkMonitor.h"
 #import "WGLNetworkReachabilityManager.h"
 #import "WGLNetworkInfoHelper.h"
-#import "WGLTrafficMonitor.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 
@@ -201,28 +200,6 @@
     return [WGLNetworkInfoHelper ipv6Address];
 }
 
-
-#pragma mark - 网速
-
-- (void)startTraffic {
-    [[WGLTrafficMonitor sharedMonitor] startMonitoring];
-}
-
-- (void)stopTraffic {
-    [[WGLTrafficMonitor sharedMonitor] stopMonitoring];
-}
-
-- (uint64_t)getNetworkTrafficSpeed:(WGLNetworkTrafficType)types {
-    if (NO == [WGLTrafficMonitor sharedMonitor].isMonitoring) {
-        [self startTraffic];
-    }
-    uint64_t speed = [[WGLTrafficMonitor sharedMonitor] getNetworkTrafficSpeed:types];
-    return speed;
-}
-
-- (uint64_t)getNetworkTrafficBytes:(WGLNetworkTrafficType)types {
-    return [[WGLTrafficMonitor sharedMonitor] getNetworkTrafficBytes:types];
-}
 
 
 @end

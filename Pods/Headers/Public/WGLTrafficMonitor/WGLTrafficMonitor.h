@@ -1,1 +1,0 @@
-../../../WGLTrafficMonitor/WGLTrafficMonitor/WGLTrafficMonitor.h

@@ -12,7 +12,6 @@
 		0956F5452255EDF900CA026F /* WGLNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5412255EDF900CA026F /* WGLNetworkReachabilityManager.m */; };
 		0956F5462255EDF900CA026F /* WGLNetworkCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5422255EDF900CA026F /* WGLNetworkCommon.m */; };
 		0956F5472255EDF900CA026F /* WGLNetworkInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0956F5432255EDF900CA026F /* WGLNetworkInfoHelper.m */; };
-		2E29152AA880720E6A79C29C /* libPods-WGLNetworkMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338F72892EDC7AD5FF69995E /* libPods-WGLNetworkMonitor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,21 +37,8 @@
 		0956F5422255EDF900CA026F /* WGLNetworkCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkCommon.m; sourceTree = "<group>"; };
 		0956F5432255EDF900CA026F /* WGLNetworkInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGLNetworkInfoHelper.m; sourceTree = "<group>"; };
 		0956F5442255EDF900CA026F /* WGLNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGLNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		250CEA8E491CAC4B4C22C8B4 /* Pods-WGLNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGLNetworkMonitor.release.xcconfig"; path = "Target Support Files/Pods-WGLNetworkMonitor/Pods-WGLNetworkMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		338F72892EDC7AD5FF69995E /* libPods-WGLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGLNetworkMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF91ED1FA7746365556D2BBB /* Pods-WGLNetworkMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGLNetworkMonitor.debug.xcconfig"; path = "Target Support Files/Pods-WGLNetworkMonitor/Pods-WGLNetworkMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		094100E822408DF90071B0E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E29152AA880720E6A79C29C /* libPods-WGLNetworkMonitor.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		094100E222408DF90071B0E8 = {
@@ -60,7 +46,6 @@
 			children = (
 				094100ED22408DF90071B0E8 /* WGLNetworkMonitor */,
 				094100EC22408DF90071B0E8 /* Products */,
-				E9B061C5E4C999CFD61E4C59 /* Pods */,
 				1111D16FBBA2987E9E577ACE /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -104,16 +89,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9B061C5E4C999CFD61E4C59 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AF91ED1FA7746365556D2BBB /* Pods-WGLNetworkMonitor.debug.xcconfig */,
-				250CEA8E491CAC4B4C22C8B4 /* Pods-WGLNetworkMonitor.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 094100F422408DF90071B0E8 /* Build configuration list for PBXNativeTarget "WGLNetworkMonitor" */;
 			buildPhases = (
-				CD5F3CCFDB91184D19A92DDD /* [CP] Check Pods Manifest.lock */,
 				094100E722408DF90071B0E8 /* Sources */,
-				094100E822408DF90071B0E8 /* Frameworks */,
 				094100E922408DF90071B0E8 /* CopyFiles */,
 			);
 			buildRules = (
@@ -165,31 +138,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CD5F3CCFDB91184D19A92DDD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WGLNetworkMonitor-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		094100E722408DF90071B0E8 /* Sources */ = {
@@ -318,7 +266,6 @@
 		};
 		094100F522408DF90071B0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF91ED1FA7746365556D2BBB /* Pods-WGLNetworkMonitor.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -330,7 +277,6 @@
 		};
 		094100F622408DF90071B0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 250CEA8E491CAC4B4C22C8B4 /* Pods-WGLNetworkMonitor.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
