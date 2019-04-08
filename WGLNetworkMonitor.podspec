@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WGLNetworkMonitor"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "This is a mobile network status monitor."
 
   # This description is used to generate tags and improve search results.
